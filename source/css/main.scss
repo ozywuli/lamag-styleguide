@@ -1,0 +1,46 @@
+@import "reset";
+
+@import "compass";
+
+@mixin clearfix {
+  overflow: hidden;
+  @include has-layout;
+}
+
+
+
+.masthead {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #000;
+}
+
+.limiter {
+	width: 83.3333%;
+	max-width: 1000px;
+	margin: 0 auto;
+	@include clearfix
+}
+
+
+.lamag-logo-link {
+	float: left;
+	display: block;
+	margin-right: 180px;
+	padding: 10px 0px 0px 0px;
+}
+.lamag-logo {
+	width: 150px;
+}
+
+
+.main-menu {
+	@include clearfix;
+	float: left;
+	&__option {
+		float: left;
+		a {
+			display: block;
+			padding: 16px 24px;
+		}
+	}
+}
